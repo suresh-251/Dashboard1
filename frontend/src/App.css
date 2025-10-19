@@ -1,0 +1,16 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--antiflash-white);
+  overflow: hidden; /* prevents unwanted scrollbars */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--antiflash-white);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow-y: auto; /* allows only content to scroll */
+  box-sizing: border-box;
+}

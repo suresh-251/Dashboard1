@@ -1,0 +1,92 @@
+:root {
+  --black: #000000ff;
+  --dim-gray: #66666eff;
+  --taupe-gray: #9999a1ff;
+  --platinum: #e6e6e9ff;
+  --antiflash-white: #f4f4f6ff;
+
+  --text-dark: var(--black);
+  --bg-light: var(--antiflash-white);
+  --bg-card: var(--platinum);
+  --accent: var(--taupe-gray);
+}
+
+/* Page container */
+.ltv-page {
+  padding: 20px;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Page heading */
+.ltv-page h2 {
+  text-align: center;
+  color: var(--dim-gray); /* highlighted */
+  /* background-color: var(--dim-gray); highlight background */
+  font-size: 32px; /* bigger */
+  font-weight: 800;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 0 30px 0; /* space below */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card styling */
+.ltv-card {
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.ltv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Table header using root variable */
+.ltv-table thead tr {
+  background-color: var(--accent); /* instead of #007bff */
+  color: var(--bg-light);           /* white/light text */
+}
+
+
+.ltv-table th {
+  padding: 12px;
+}
+
+.ltv-table th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.ltv-table th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.ltv-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.ltv-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.ltv-table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+.ltv-table td {
+  padding: 12px;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: var(--accent);
+  margin-top: 50px;
+}

@@ -1,0 +1,49 @@
+:root {
+  --black: #000000ff;
+  --dim-gray: #66666eff;
+  --taupe-gray: #9999a1ff;
+  --platinum: #e6e6e9ff;
+  --antiflash-white: #f4f4f6ff;
+}
+
+.charts-container {
+  display: flex;
+  flex-direction: column; /* stack charts vertically */
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.chart-card {
+  background-color: var(--antiflash-white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 700px;
+  min-height: 400px; /* ensures pie chart has enough height */
+  display: flex;
+  flex-direction: column;
+}
+
+.no-data {
+  text-align: center;
+  color: var(--dim-gray);
+}
+
+/* Force canvas to fill container height */
+.pie-chart canvas,
+.line-chart canvas {
+  height: 100% !important;
+}
+
+/* Flex sizes for future use if needed */
+.line-chart {
+  flex: 1 1 55%;
+  min-width: 300px;
+}
+
+.pie-chart {
+  flex: 1 1 40%;
+  min-width: 45%;
+}

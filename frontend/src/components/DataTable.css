@@ -1,0 +1,92 @@
+/* ===== DATA TABLE CONTAINER ===== */
+.data-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 25px;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== FILTER BUTTONS ===== */
+.filter-buttons {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.filter-buttons button.active {
+  background-color: var(--dim-gray);
+  color: #fff;
+}
+
+.filter-buttons button:not(.active) {
+  background-color: #eee;
+  color: var(--text-dark);
+}
+
+.filter-buttons button.export-btn {
+  background-color: var(--dim-gray);
+  color: #fff;
+  margin-left: auto;
+}
+
+.filter-buttons button:hover {
+  background-color: var(--black);
+  color: #fff;
+}
+
+/* ===== TABLE ===== */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 10px;
+  border: 1px solid var(--platinum);
+  text-align: left;
+  font-size: 14px;
+}
+
+.data-table th {
+  background-color: var(--dim-gray);
+  color: #fff;
+  font-weight: 600;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: var(--bg-card);
+}
+
+.data-table tbody tr:hover {
+  background-color: #e6f0ff;
+  transition: background-color 0.2s ease;
+}
+
+/* ===== STATUS COLORS ===== */
+.status-due {
+  background-color: #f8d7da !important; /* red */
+}
+
+.status-pending {
+  background-color: #fff3cd !important; /* yellow */
+}
+
+.status-done {
+  background-color: #d4edda !important; /* green */
+}
